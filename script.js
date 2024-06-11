@@ -15,6 +15,7 @@ function header(){
 
     const aboutPage = document.createElement("a");
     aboutPage.textContent = "About";
+    aboutPage.href = 'about.html'
 
     const projectPage = document.createElement("a");
     projectPage.textContent = "Projects"

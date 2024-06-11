@@ -31,6 +31,22 @@ h2{
     flex: auto;
 }
 
+.about{
+    flex:auto;
+    text-wrap: wrap;
+    color:white;
+    padding-left: 254px;
+    padding-right: 254px;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0px;
+
+}
+
+.about .title{
+    padding-bottom: 32px;
+}
+
 
 .container1 {
     height: 140px;
@@ -80,6 +96,7 @@ a {
     font-size: 18px;
   }
 
+
   
 
 .text_bounce:hover {
@@ -107,7 +124,6 @@ a {
 
 #typewriter {
     
-    white-space: nowrap;
             overflow: hidden;
             animation: typewriter 4s steps(50)  ;
                
@@ -123,3 +139,8 @@ a {
             }
         }
 
+.title{ /* Add this so the title has a different animation from the about page text*/
+    white-space: nowrap; 
+    
+
+}
