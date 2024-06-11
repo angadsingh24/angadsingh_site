@@ -73,16 +73,19 @@ header();
 footer();
 
 
+const openButtons = document.querySelectorAll('.trigger-modal');
+const closeButtons = document.querySelectorAll('.close-modal');
 
-const openButton = document.getElementById('trigger-modal');
-const closeButton = document.getElementById('close-modal');
-
-function toggleModal() {
-  const modalDiv = document.querySelector('.project_info');
-  const backdrop = document.querySelector('.projects')
-  modalDiv.classList.toggle('show');
-  backdrop.classList.toggle('show');
+function toggleModal(event) {
+    const modalId = event.target.getAttribute('data-modal');
+    const modalDiv = document.getElementById(modalId);
+    modalDiv.classList.toggle('show');
 }
 
-openButton.addEventListener('click', toggleModal);
-closeButton.addEventListener('click', toggleModal);
+openButtons.forEach(button => {
+    button.addEventListener('click', toggleModal);
+});
+
+closeButtons.forEach(button => {
+    button.addEventListener('click', toggleModal);
+});
