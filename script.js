@@ -71,3 +71,18 @@ function footer(){
 
 header();
 footer();
+
+
+
+const openButton = document.getElementById('trigger-modal');
+const closeButton = document.getElementById('close-modal');
+
+function toggleModal() {
+  const modalDiv = document.querySelector('.project_info');
+  const backdrop = document.querySelector('.projects')
+  modalDiv.classList.toggle('show');
+  backdrop.classList.toggle('show');
+}
+
+openButton.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', toggleModal);

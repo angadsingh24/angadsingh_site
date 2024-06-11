@@ -1,6 +1,7 @@
 
 *{
     font-family: 'Roboto', sans-serif;
+    font-weight: 100px;
 }
 .header{
     display: flex;
@@ -21,15 +22,7 @@ h2{
     margin-right: auto;
 }
 
-.project_title{
-    padding-left: 254px;
-    font-size: 20px;
-    color:white;
-}
 
-.projects {
-    flex: auto;
-}
 
 .about{
     flex:auto;
@@ -144,3 +137,87 @@ a {
     
 
 }
+
+.project_title{
+    padding-left: 254px;
+    font-size: 20px;
+    color:white;
+}
+
+.projects {
+    flex: auto;
+    display:flex;
+}
+.project{
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 254px;
+    padding-right:254px;
+}
+
+/*Buttons for project page */
+.button-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #0e79dd;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  
+  .project_info {
+    padding: 16px 32px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: fixed;
+    height: 600px;
+    width:600px;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, opacity 0.4s ease;
+    transform: translate(-50%, -100%);
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100px;
+
+    display:flex;
+    flex-direction:column;
+  }
+  
+  .project_info p {
+    margin-bottom: 0px;
+    flex:auto;
+  }
+
+  .project_info img {
+    padding-top: 10px;
+    height: auto;
+    width: 250px;
+    flex:auto;
+    align-self:center;
+  }
+  
+  
+  .project_info.show {
+    opacity: 100%;
+    pointer-events: all;
+    transform: translate(-50%, -50%)
+  }
+  /*End buttons for project page*/
+  
