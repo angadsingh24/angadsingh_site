@@ -6,11 +6,12 @@ function header(){
     header.className = "header";
 
     const myName = document.createElement("h2");
-    myName.textContent = "Angad Singh";
 
     const home = document.createElement("a");
-    home.textContent = "Home"
     home.href = 'index.html';
+    home.textContent = "Angad Singh";
+
+    myName.appendChild(home);
 
     const aboutPage = document.createElement("a");
     aboutPage.textContent = "About";
@@ -24,7 +25,6 @@ function header(){
     resumePage.href = "https://docs.google.com/document/d/e/2PACX-1vT8Snv6YQD-3WgUEW0sCPonF479dtEFMUeD4uD4MiX79vNVTg-2AxtuPNzcjBgMr3Ivz8gtw6GlzHoY/pub";
 
     header.appendChild(myName);
-    header.appendChild(home);
     header.appendChild(aboutPage);
     header.appendChild(projectPage);
     header.appendChild(resumePage);
@@ -41,27 +41,27 @@ function footer(){
 
 
     const lnImage = document.createElement("img");
-    lnImage.src= "https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png";
+    lnImage.src= "images/linkedIn.webp";
     const lnLink = document.createElement("a");
     lnLink.href = "https://www.linkedin.com/in/angad-singh-a80a61233/";
     lnLink.appendChild(lnImage);
 
 
     const gitImg = document.createElement("img");
-    gitImg.src=  "https://cdn-icons-png.flaticon.com/512/25/25231.png";
+    gitImg.src=  "images/git.png";
     const gitLink = document.createElement("a");
-    lnLink.href = "https://github.com/angadsingh24";
+    gitLink.href = "https://github.com/angadsingh24";
     gitLink.appendChild(gitImg);
 
     const mailImg = document.createElement("img");
-    mailImg.src=  "https://www.freeiconspng.com/thumbs/gmail-icon/gmail-icon-23.png";
+    mailImg.src=  "images/gmail.png";
     const mailLink = document.createElement("a");
     mailLink.href = "mailto:angads@umich.edu";
     mailLink.appendChild(mailImg);
 
     linkIcons.appendChild(lnLink);
     linkIcons.appendChild(gitLink);
-    linkIcons.appendChild(mailImg);
+    linkIcons.appendChild(mailLink);
 
     footer.appendChild(linkIcons);
 
