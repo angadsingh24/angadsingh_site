@@ -54,14 +54,18 @@ h2{
 
 .container2{
     flex:auto;
-    font-size: 28px;
-    color: white;
-    font-weight: 300;
+    
     background: #2F3A47; /* Added background color for better visibility */
 
 }
 
-.link_icons img{
+.involved_title{
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.link_icons img{    
     width: auto;
     height:32px;
 }
@@ -204,10 +208,20 @@ button {
     align-items: center;
 }
 
+.container2 .project_info{
+    height: 450px;
+    width: 450px;
+}
+.container2 .project_info p{
+    padding-bottom: 0px;
+}
+
 .project_info p {
     margin-bottom: 0px;
     flex: auto;
+
 }
+
 
 .project_info img {
     padding-top: 10px;
