@@ -23,7 +23,7 @@ function header(){
 
     const resumePage = document.createElement("a");
     resumePage.textContent = "Resume";
-    resumePage.href = "https://docs.google.com/document/d/1pvySTD2WOJGE3kqmCbgHhQpHjKOHSlgDiX_tuCAN5ps/pub";
+    resumePage.href = "https://docs.google.com/document/d/1pvySTD2WOJGE3kqmCbgHhQpHjKOHSlgDiX_tuCAN5ps/edit?usp=sharing";
 
     header.appendChild(myName);
     header.appendChild(aboutPage);
