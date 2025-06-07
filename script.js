@@ -21,9 +21,9 @@ function header(){
     projectPage.textContent = "Projects"
     projectPage.href = 'projects.html';
 
-    const resumePage = document.createElement("a");
-    resumePage.textContent = "Resume";
-    resumePage.href = "https://docs.google.com/document/d/1pvySTD2WOJGE3kqmCbgHhQpHjKOHSlgDiX_tuCAN5ps/edit?usp=sharing";
+    resumePage.href = "images/resume.pdf";
+    resumePage.target = "_blank"; 
+    document.body.appendChild(resumePage); 
 
     header.appendChild(myName);
     header.appendChild(aboutPage);
