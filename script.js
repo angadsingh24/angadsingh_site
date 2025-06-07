@@ -20,7 +20,8 @@ function header(){
     const projectPage = document.createElement("a");
     projectPage.textContent = "Projects"
     projectPage.href = 'projects.html';
-
+    
+    const resumePage = document.createElement("a");
     resumePage.href = "images/resume.pdf";
     resumePage.target = "_blank"; 
     document.body.appendChild(resumePage); 
