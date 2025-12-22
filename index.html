@@ -4,85 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angad Singh</title>
-    <link rel="stylesheet" href="styles.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <div class="container1">
-        <h1 id="typewriter" class = "title"> Hi, I'm Angad! </h1>
-        <p id="typewriter" class = "title"> CS major @ University of Michigan, fascinated by the intersection of business and technology </p>
-    </div>
-
-    <div class="container2">
-        <div class="involved_title">
-            <p align="center" class="text_bounce"> Currently Involved With </p>
-        </div>
-
-        <div class="projects">
-
-            <!-- MECC -->
-            <div class="project">
-                <div class="project_info" id="modal-3">
-                    <h2>Consultant @ MECC Consulting Group</h2>
-                    <p> Consulted for Delta Airlines and Tempus AI.  </p>
-                    <a href="https://meccconsulting.com/index.html">Read more</a>
-                       <button class="close-modal" data-modal="modal-3">Close</button>
-                </div>
-            
-                <div class="button_container">
-                    <button class="trigger-modal " data-modal="modal-3">Consultant @ MECC Consulting Group</button>
-                </div>
-            </div>
-            <!-- AAT -->
-            <div class="project">
-                <div class="project_info" id="modal-1">
-                    <h2>Co-founder @ Academic Advancements</h2>
-                    <p>About Academic Advancements: We are a student-led NGO committed to 
-                        fulfilling the United Nations' 
-                        fourth sustainability goal, quality education. 
-                        Academic Advancements is focused on elevating the education of 
-                        underprivileged students through tutoring and partnerships. 
-                        Their education is compromised by a lack of income and 
-                        financial stability, and we directly provide aid to families on a regular basis, covering their tuition and other educational expenses.
-                        So far, we have raised <strong> $22,000 </strong> to support our cause
-                        and have made an impact on more than <strong> 5500 families</strong> in <strong> 4 countries</strong>. 
-                        Not ony that, but we have inspired <strong> 60+ volunteers to work with us</strong>.
-
-
-                    </p>
-                    <p>Skills: Project management, web development, financial management, client/partner interaction     </p>
-                    <a href="https://www.academicadvancements.org">Read more</a>
-                    <button class="close-modal" data-modal="modal-1">Close</button>
-                </div>
-            
-                <div class="button_container">
-                    <button class="trigger-modal " data-modal="modal-1">Co-founder @ Academic Advancements</button>
-                </div>
-            </div>
-
-            <!-- Intern -->
-            <div class="project">
-                <div class="project_info" id="modal-2">
-                    <h2>Intern @ Coachence</h2>
-                    <p> I constructed an internal portal to show Amazon driver rankings by harnessing driver data using Python, MySQL, and HTML/CSS, which will be sent out to 100+ drivers to improve their performance and safety.
- </p>
-                    <p>Skills: Python, mySQL, HTML, CSS </p>
-                    <a href="https://www.coachence.com/">Read more</a>
-                    <button class="close-modal" data-modal="modal-2">Close</button>
-                </div>
-            
-                <div class="button_container">
-                    <button class="trigger-modal " data-modal="modal-2">Intern @ Coachence</button>
-                </div>
-            </div>
-    </div>
-
-
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
