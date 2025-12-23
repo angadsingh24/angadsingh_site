@@ -26,7 +26,7 @@ function Modal({ id, isOpen, onClose }) {
   // Experience modals
   const experienceData = {
     'exp-1': {
-      title: 'Incoming Sophomore Summer Business Analyst @ McKinsey & Company',
+      title: 'Sophomore Summer Business Analyst @ McKinsey & Company',
       content: (
         <>
           <h2>Incoming Sophomore Summer Business Analyst @ McKinsey & Company</h2>
@@ -211,7 +211,7 @@ function Modal({ id, isOpen, onClose }) {
             point cloud using the Point Cloud Library (PCL).
           </p>
           <a href="https://docs.google.com/document/d/14b51KlOWTnBAQ5DodsVSAcige71gZawspGFyAAnjiDg/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="modal-link">Research Paper</a>
-          <img src="/images/lidar.png" alt="Lidar Scanner" />
+          <img src={`${import.meta.env.BASE_URL}images/lidar.png`} alt="Lidar Scanner" />
         </>
       )
     },
@@ -225,7 +225,7 @@ function Modal({ id, isOpen, onClose }) {
             I used Python and used an LSTM. Below is the confusion matrix for my model, which had 77.5% accuracy.
           </p>
           <a href="https://github.com/angadsingh24/stock_sentiment_analysis/tree/main" target="_blank" rel="noopener noreferrer" className="modal-link">View code</a>
-          <img src="/images/stock_sentiment.png" alt="Stock Sentiment Analysis" />
+          <img src={`${import.meta.env.BASE_URL}images/stock_sentiment.png`} alt="Stock Sentiment Analysis" />
         </>
       )
     },
@@ -239,7 +239,7 @@ function Modal({ id, isOpen, onClose }) {
             I used HTML, CSS, and Javascript.
           </p>
           <a href="https://angadsingh24.github.io/etch_a_sketch/" target="_blank" rel="noopener noreferrer" className="modal-link">Try it out!</a>
-          <img src="/images/etch.png" alt="Etch a Sketch" />
+          <img src={`${import.meta.env.BASE_URL}images/etch.png`} alt="Etch a Sketch" />
         </>
       )
     },
@@ -255,7 +255,7 @@ function Modal({ id, isOpen, onClose }) {
             This was a great project to practice OOP in C++.
           </p>
           <a href="https://github.com/angadsingh24/bank_management_system" target="_blank" rel="noopener noreferrer" className="modal-link">View the code!</a>
-          <img src="/images/bank.png" alt="Bank Management System" />
+          <img src={`${import.meta.env.BASE_URL}images/bank.png`} alt="Bank Management System" />
         </>
       )
     }

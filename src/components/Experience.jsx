@@ -2,9 +2,10 @@ function Experience({ openModal, setOpenModal }) {
   const involvements = [
     {
       id: 'exp-1',
-      title: 'Incoming Sophomore Summer Business Analyst @ McKinsey & Company',
+      title: 'Sophomore Summer Business Analyst @ McKinsey & Company',
       company: 'McKinsey & Company',
-      role: 'Incoming Sophomore Summer Business Analyst',
+      role: 'Summer Business Analyst (SSBA)',
+      logo: `${import.meta.env.BASE_URL}images/mckinsey_logo.jpeg`,
       location: 'Chicago, IL',
       period: 'Jun. 2026',
       description: 'Incoming summer business analyst position at one of the world\'s leading management consulting firms.',
@@ -22,8 +23,9 @@ function Experience({ openModal, setOpenModal }) {
       title: 'Founding Software Engineer @ Renovait',
       company: 'Renovait',
       role: 'Founding Software Engineer',
+      logo: `${import.meta.env.BASE_URL}images/renovait_io_logo.jpeg`,
       location: 'Ann Arbor, MI',
-      period: 'September 2025',
+      period: 'Sept. 2025 - Dec. 2025',
       description: 'Engineered Renovait\'s full-stack web platform with AI-powered features for personalized user experiences.',
       highlights: [
         'Engineered full-stack web platform with React front-end and scalable backend APIs',
@@ -40,8 +42,9 @@ function Experience({ openModal, setOpenModal }) {
       title: 'Data Analytics & Strategy Intern @ Applied Materials',
       company: 'Applied Materials',
       role: 'Data Analytics & Strategy Intern',
+      logo: `${import.meta.env.BASE_URL}images/appliedmaterials.jpeg`,
       location: 'Santa Clara, CA',
-      period: 'Jun. 2025',
+      period: 'Jun. 2025 - Aug. 2025',
       description: 'Developed Tableau and Excel dashboards using HR data to deliver actionable insights to senior stakeholders.',
       highlights: [
         'Uncovered key trends for 6 business units by developing Tableau and Excel dashboards',
@@ -59,6 +62,7 @@ function Experience({ openModal, setOpenModal }) {
       title: 'Project Manager & Technical Consultant @ MECC Consulting Group',
       company: 'MECC Consulting Group',
       role: 'Project Manager & Technical Consultant',
+      logo: `${import.meta.env.BASE_URL}images/mecc_consulting_group_logo.jpeg`,
       location: 'Ann Arbor, MI',
       period: 'Sept. 2024 - Present',
       description: 'Consulting for major clients including Delta Airlines and Tempus AI, developing ML models and strategic reports.',
@@ -75,6 +79,7 @@ function Experience({ openModal, setOpenModal }) {
       title: 'Software Engineering Intern @ Coachence',
       company: 'Coachence',
       role: 'Software Engineering Intern',
+      logo: `${import.meta.env.BASE_URL}images/coachence.jpeg`,
       location: 'Remote',
       period: 'Jul. 2024 - Aug. 2024',
       description: 'Prototyped internal portal for Amazon driver rankings and analyzed driver safety data.',
@@ -92,6 +97,7 @@ function Experience({ openModal, setOpenModal }) {
       title: 'Co-founder @ Academic Advancements',
       company: 'Academic Advancements',
       role: 'Co-founder, Math/CS Tutor',
+      logo: `${import.meta.env.BASE_URL}images/academicadvancements.jpeg`,
       location: 'Hightstown, NJ',
       period: 'Jan. 2021 - Aug. 2024',
       description: 'Student-led NGO committed to fulfilling the United Nations\' fourth sustainability goal, quality education.',
@@ -111,6 +117,7 @@ function Experience({ openModal, setOpenModal }) {
       title: 'Robotics Research Intern @ Sung Robotics Lab',
       company: 'Sung Robotics Lab, University of Pennsylvania',
       role: 'Robotics Research Intern',
+      logo: `${import.meta.env.BASE_URL}images/university_of_pennsylvania_logo.jpeg`,
       location: 'Philadelphia, PA',
       period: 'Jun. 2023 - Aug. 2023',
       description: 'Engineered an affordable, novel 3D LIDAR system from a 2D LIDAR for robotics research.',
@@ -134,6 +141,7 @@ function Experience({ openModal, setOpenModal }) {
           {involvements.map((item, index) => {
             const isEven = index % 2 === 0
             const isMcKinsey = item.id === 'exp-1'
+            const headerAlignment = isEven ? 'logo-right' : 'logo-left'
             return (
               <div 
                 key={item.id} 
@@ -144,11 +152,18 @@ function Experience({ openModal, setOpenModal }) {
                   className="timeline-content"
                   onClick={() => setOpenModal(item.id)}
                 >
-                  <div className="card-header">
-                    <h3>{item.role}</h3>
-                    <span className="company">{item.company}</span>
-                    <span className="period">{item.period}</span>
-                    {isMcKinsey && <span className="future-badge">Upcoming</span>}
+                  <div className={`card-header ${headerAlignment}`}>
+                    {item.logo && (
+                      <div className="timeline-logo">
+                        <img src={item.logo} alt={`${item.company} logo`} />
+                      </div>
+                    )}
+                    <div className="card-header-text">
+                      <h3>{item.role}</h3>
+                      <span className="company">{item.company}</span>
+                      <span className="period">{item.period}</span>
+                      {isMcKinsey && <span className="future-badge">Upcoming</span>}
+                    </div>
                   </div>
                 </div>
               </div>

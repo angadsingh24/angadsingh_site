@@ -16,7 +16,7 @@ function Header() {
           <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about') }}>About</a>
           <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience') }}>Experience</a>
           <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects') }}>Projects</a>
-          <a href="/images/resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-link">Resume</a>
+          <a href={`${import.meta.env.BASE_URL}images/resume.pdf`} target="_blank" rel="noopener noreferrer" className="resume-link">Resume</a>
         </nav>
       </div>
     </header>

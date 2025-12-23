@@ -405,12 +405,55 @@ section {
 
 .timeline-content .card-header {
   display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.timeline-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--bg-card-hover);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.timeline-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-header-text {
+  display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
+}
+
+.card-header.logo-left {
+  flex-direction: row;
+  text-align: left;
+}
+
+.card-header.logo-right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.card-header.logo-right .card-header-text {
+  align-items: flex-end;
+}
+
+.card-header.logo-left .card-header-text {
+  align-items: flex-start;
 }
 
 .timeline-content .card-header h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--umich-maize);
   margin: 0;
   font-weight: 600;
@@ -419,12 +462,11 @@ section {
 
 .timeline-content .card-header .company {
   font-size: 0.95rem;
-  margin-top: 0.25rem;
 }
 
 .timeline-content .card-header .period {
   font-size: 0.85rem;
-  margin-top: 0.25rem;
+  opacity: 0.8;
 }
 
 .timeline-content .card-skills {

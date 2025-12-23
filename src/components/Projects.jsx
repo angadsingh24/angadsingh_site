@@ -5,7 +5,7 @@ function Projects({ openModal, setOpenModal }) {
       title: '3D Laser Scanner',
       description: 'Prototyping a 3D Laser Scanner to Generate a Point Cloud Visualization of Deformable Origami Robots',
       tech: ['C++', 'ROS', 'Arduino', 'PCL'],
-      image: '/images/lidar.png',
+      image: `${import.meta.env.BASE_URL}images/lidar.png`,
       link: 'https://docs.google.com/document/d/14b51KlOWTnBAQ5DodsVSAcige71gZawspGFyAAnjiDg/edit?usp=sharing',
       linkText: 'Research Paper'
     },
@@ -14,7 +14,7 @@ function Projects({ openModal, setOpenModal }) {
       title: 'Stock Sentiment Analysis',
       description: 'Custom deep neural network using LSTM for sentiment analysis on Twitter stock data with 77.5% accuracy',
       tech: ['Python', 'LSTM', 'Deep Learning'],
-      image: '/images/stock_sentiment.png',
+      image: `${import.meta.env.BASE_URL}images/stock_sentiment.png`,
       link: 'https://github.com/angadsingh24/stock_sentiment_analysis/tree/main',
       linkText: 'View Code'
     },
@@ -23,7 +23,7 @@ function Projects({ openModal, setOpenModal }) {
       title: 'Etch-a-Sketch',
       description: 'Interactive Etch a Sketch game built to practice DOM manipulation',
       tech: ['HTML', 'CSS', 'JavaScript'],
-      image: '/images/etch.png',
+      image: `${import.meta.env.BASE_URL}images/etch.png`,
       link: 'https://angadsingh24.github.io/etch_a_sketch/',
       linkText: 'Try it out!'
     },
@@ -32,7 +32,7 @@ function Projects({ openModal, setOpenModal }) {
       title: 'Bank Management System',
       description: 'Console-based bank management system with full CRUD operations for account management',
       tech: ['C++', 'OOP'],
-      image: '/images/bank.png',
+      image: `${import.meta.env.BASE_URL}images/bank.png`,
       link: 'https://github.com/angadsingh24/bank_management_system',
       linkText: 'View Code'
     }
